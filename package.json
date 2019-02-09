@@ -1,0 +1,19 @@
+{
+  "name": "nxt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "Lanius",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-standard-react": "^7.0.2",
+    "express": "^4.16.4",
+    "next": "^7.0.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  }
+}
