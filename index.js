@@ -10,14 +10,14 @@ const handle = appNext.getRequestHandler();
 
 const getRoutesNext = require('./next/routes');
 
-const routes = getRoutesNext();
+const routesNext = getRoutesNext();
 const server = express();
 
 appNext.prepare().then(() => {
-  server.get('*', (req, res) => {
+  server.get('/next', (req, res) => {
     const parsedUrl = parse(req.url, true);
     const { pathname, query = {} } = parsedUrl;
-    const route = routes[pathname];
+    const route = routesNext[pathname];
     if (route) {
       return appNext.render(req, res, route.page, query);
     }
